@@ -77,19 +77,6 @@ int main(void)
 		return 0;
 	}
 	
-	// val[0].val1 = 4; /// g
-	// ret = sensor_attr_set(lsm6dsl_dev, SENSOR_CHAN_ACCEL_XYZ, SENSOR_ATTR_FULL_SCALE, &val);
-	// 	if (ret < 0) {
-	// 	printk("Couldn't configure attribute: ACCEL FS\n");
-	// 	return 0;
-	// }
-
-	// val[0].val1 = 125; /// dps
-	// ret = sensor_attr_set(lsm6dsl_dev, SENSOR_CHAN_GYRO_XYZ, SENSOR_ATTR_FULL_SCALE, &val);
-	// if (ret < 0) {
-	// 	printk("Couldn't configure attribute: GYRO FS\n");
-	// 	return 0;
-	// }
 
 	while (1) {
 		ret = print_accels(lsm6dsl_dev);
